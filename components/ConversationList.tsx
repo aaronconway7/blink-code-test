@@ -7,14 +7,10 @@ import useSWR from 'swr'
 import { compareDesc } from 'date-fns'
 import { Conversation as ConversationType } from '@/types/ConversationTypes'
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json())
-
 export default function ConversationList() {
   const params = useParams()
-  const { data, error, isLoading } = useSWR<ConversationType[]>(
-    '/api/conversations',
-    fetcher
-  )
+  const { data, error, isLoading } =
+    useSWR<ConversationType[]>('/api/conversations')
   const conversations = useMemo(
     () =>
       data?.sort((a: ConversationType, b: ConversationType) =>

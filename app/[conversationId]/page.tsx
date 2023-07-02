@@ -7,14 +7,10 @@ import { compareAsc } from 'date-fns'
 import { Conversation as ConversationType } from '@/types/ConversationTypes'
 import Message from '@/components/Message'
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json())
-
 export default function Conversation() {
   const params = useParams()
-  const { data, error, isLoading } = useSWR<ConversationType[]>(
-    '/api/conversations',
-    fetcher
-  )
+  const { data, error, isLoading } =
+    useSWR<ConversationType[]>('/api/conversations')
   const conversation = useMemo(
     () =>
       data?.find((conversation) => conversation.id === params.conversationId),
