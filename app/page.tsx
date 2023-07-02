@@ -1,3 +1,5 @@
+import CenteredText from '@/components/CenteredText'
+
 export default function Home() {
-  return <main></main>
+  return <CenteredText text="Select a chat on the left to start!" />
 }

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useMemo } from 'react'
 import useSWR from 'swr'
 import { compareDesc } from 'date-fns'
+import CenteredText from '@/components/CenteredText'
 import { Conversation as ConversationType } from '@/types/ConversationTypes'
 
 export default function ConversationList() {
@@ -19,8 +20,8 @@ export default function ConversationList() {
     [data]
   )
 
-  if (error) return <p>there is an erro!</p>
-  if (isLoading) return <p>loading...</p>
+  if (error) return <CenteredText text="Sorry, an error occured." />
+  if (isLoading) return <CenteredText text="Loading..." />
 
   return (
     <div>

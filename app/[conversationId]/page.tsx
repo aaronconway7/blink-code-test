@@ -6,6 +6,7 @@ import { useMemo } from 'react'
 import { compareAsc } from 'date-fns'
 import { Conversation as ConversationType } from '@/types/ConversationTypes'
 import Message from '@/components/Message'
+import CenteredText from '@/components/CenteredText'
 
 export default function Conversation() {
   const params = useParams()
@@ -24,8 +25,8 @@ export default function Conversation() {
     [conversation]
   )
 
-  if (error) return <p>there is an erro!</p>
-  if (isLoading) return <p>loading...</p>
+  if (error) return <CenteredText text="Sorry, an error occured." />
+  if (isLoading) return <CenteredText text="Loading..." />
 
   return (
     <>
