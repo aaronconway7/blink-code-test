@@ -32,7 +32,7 @@ export default function ConversationList() {
         {conversations.map((conversation: ConversationType) => (
           <li className="border-b" key={conversation.id}>
             <Link
-              className="block py-4 px-6 hover:bg-blue-light hover:text-blue aria-[current=page]:bg-blue aria-[current=page]:text-white focus-within:outline-[#f9b133]"
+              className="block py-4 px-6 hover:bg-blue-light hover:text-blue aria-[current=page]:bg-blue aria-[current=page]:text-white focus-within:outline-gold"
               href={`/${conversation.id}`}
               aria-current={
                 params.conversationId === conversation.id ? 'page' : false

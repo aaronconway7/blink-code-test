@@ -13,6 +13,7 @@ module.exports = {
           DEFAULT: '#004bd6',
           dark: '#0030b5',
         },
+        gold: '#f9b133',
       },
     },
   },
