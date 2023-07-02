@@ -1,4 +1,4 @@
-# Blink Code Test 💬
+# [Blink Code Test](https://blink-code-test.vercel.app/) 💬
 
 ![Screenshot](/files/screenshot.png)
 
@@ -41,7 +41,9 @@
 
 ## Getting Started 🎬
 
-First, run the development server:
+This app is deployed on [Vercel](https://vercel.com/) - Check it out [here](https://blink-code-test.vercel.app/)!
+
+If you want to run it locally, run the development server:
 
 ```bash
 npm run dev
