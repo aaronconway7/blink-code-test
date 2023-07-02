@@ -20,6 +20,7 @@ export default function MessageForm({
       <input
         id="message-input"
         type="text"
+        name="message"
         placeholder="Type message here..."
         value={messageInput}
         onChange={(e) => setMessageInput(e.target.value)}
