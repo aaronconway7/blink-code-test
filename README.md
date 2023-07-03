@@ -73,3 +73,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - Write more tests potentially even introduce an E2E framework like cypress of playwright
   - Design some nicer looking loading states rather than just printing "loading..."
   - Accessibility improvements
+  - Tidy up `/app/[conversationId]/page.tsx` (maybe use a custom hook?)
